@@ -1,0 +1,393 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .encabezado {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    top: 0;
+    background-color: #fbcb0c77;
+    padding: 6px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .titulo {
+    height: 40px;
+    float: right;
+  }
+  
+  .casa > img {
+    height: 50px;
+    margin-left: 10px;
+    z-index: 5;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .casa {
+    z-index: 5;
+  }
+  
+  .video-de-fondo {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    position: absolute;
+    height: 100%;
+    width: 26%;
+    background-color: #111;
+    z-index: 3;
+    padding-top: 45px;
+  }
+  
+  .sidebar a {
+    font-family: 'Raleway', sans-serif;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+
+  .imgl{
+    display: none;
+  }
+  
+  .lista {
+    background-color: rgb(253, 231, 142);
+    margin: 55px 20px;
+    padding: 0px;
+    border-radius: 50px;
+    text-align: center;
+  }
+  
+  .contactanos {
+    visibility: hidden;
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    margin-left: 26%;
+    transition: margin-left 0.10s;
+  }
+  
+  .cja-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .cover {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.425);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slogan {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    padding: 0px 200px;
+    margin-bottom: 5px;
+  }
+  
+  .slogan2 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 0px 100px;
+    margin-bottom: 50px;
+  }
+  
+  .contact {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    width: 200px;
+    height: 60px;
+    background-color: rgb(255, 221, 83);
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact:hover {
+    background-color: white;
+    color: rgb(253, 231, 142);
+    transform: scale(1.1);
+  }
+  
+  .max-dere {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 5px;
+    z-index: 3;
+  }
+  
+  .derechos {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .derechos > img {
+    width: 25px;
+  }
+  
+  .dere {
+    font-weight: bold;
+    color: white;
+  }
+  
+
+
+@media (max-width: 480px){
+   
+   body{
+    overflow: visible;
+   };
+  
+    .titulo{
+      height: 25px;
+    }
+  
+    .video-de-fondo{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        
+    }
+    .sidebar{
+      width: 100%;
+      height: 100%;
+      padding-top: 0px;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('') center center / cover no-repeat;
+    }
+
+    .cja-video{
+        height: 100%;
+        width: 100%;
+    }
+  
+    .contactanos{
+      visibility: visible;
+      width: auto;
+      height: auto;
+    }
+  
+    #main{
+     margin-left: 0;
+     width: 100%;
+     height: 100%;
+    }
+
+    .cover{
+        display: none;
+        visibility: hidden;
+        height: 100%;
+    }
+  
+    .closebtn{
+      display: none;
+      visibility: hidden;
+    }
+  
+  
+    .max-dere{
+        width: 100%;
+        visibility: visible;
+        display: flex;
+        text-align: center;
+        bottom: -2px;
+    }
+
+    .dere{
+      visibility: hidden;
+    }
+
+    .derechos img{
+      width: 40px;
+    }
+
+    .sidebar a{
+        align-items: center;
+        justify-content: normal;
+        font-weight: 900;
+    }
+
+    .lista{
+        border-radius: 0;
+        text-align: left;
+        margin: 20px 20px;
+    }
+
+    .imgl{
+        display: block;
+        width: 60px;
+        object-fit: cover;
+    }
+  }
+
+
+  @media (min-height: 741px) {
+    .max-dere{
+        width: 100%;
+        visibility: visible;
+        display: flex;
+        text-align: center;
+        bottom: -2px;
+    }
+
+    .lista{
+        border-radius: 0;
+        text-align: left;
+        margin: 65px 20px;
+    }
+
+    .dere{
+      visibility: hidden;
+    }
+
+    .derechos img{
+      width: 40px;
+    }
+
+
+  }
+
+  @media (min-height: 740px) {
+    .max-dere{
+        width: 100%;
+        visibility: visible;
+        display: flex;
+        text-align: center;
+    }
+    .dere{
+      visibility: hidden;
+    }
+
+    .lista{
+        border-radius: 0;
+        text-align: left;
+        margin: 40px 20px;
+    }
+
+
+  }
+  
+
+  @media (min-height: 915px) {
+
+    .lista{
+        border-radius: 0;
+        text-align: left;
+        margin: 70px 20px;
+    }
+    .dere{
+      visibility: hidden;
+    }
+
+  }
+
+  @media (min-height: 844px) {
+
+    .lista{
+        border-radius: 0;
+        text-align: left;
+        margin: 60px 20px;
+    }
+
+    .dere{
+      visibility: hidden;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width:1024px){
+    .titulo{
+      height: 25px;
+    }
+
+    .slogan{
+      font-size: 30px;
+    }
+
+    .slogan2{
+      font-size: 15px;
+    }
+
+    .contact{
+      width: 100px;
+      height: 30px;
+      font-size: 13px;
+    }
+
+    .sidebar a{
+      font-size: 13px;
+    }
+
+    .lista{
+      margin: 25px;
+    }
+
+    .dere{
+      font-size: 13px;
+    }
+
+
+
+    
+  }

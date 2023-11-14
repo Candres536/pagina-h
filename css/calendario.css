@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .calendario{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(34, 33, 42);
+    font-family: 'Arimo', sans-serif;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    
+  }
+  .info-c{
+    background-color: rgb(251, 203, 12);
+    width: 100%;
+  
+  }
+  
+  .info-calendario{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    padding: 1em 2em;
+   
+    
+  }
+  
+  .calendario-next, .calendario-prev{
+    cursor: pointer;
+  }
+  .calendario-prev{
+    margin-right: auto;
+  }
+
+  .calendario-m{
+    font-size: 20px;
+  }
+  
+  .calendario-next{
+    margin-left: auto;
+  }
+  
+  .info-sd{
+    width: 95%;
+    padding: 5px;
+    margin-top: 20px;
+    
+  }
+  
+  .calendario-mounth, .calendario-year{
+    padding: 0em 1em;
+  }
+  
+  .semanas{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    color: #fff;
+    align-items: center;
+    padding-bottom: 5px;
+  
+  }
+  
+  #dates{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .calendario-item{
+    text-align: center;
+    line-height: 2;
+  }
+  
+  
+  .calendario-days{
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  
+  .numero{
+    color: #fff;
+    width: 50%;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .dia-e{
+    background-color: rgb(251, 203, 12);
+  }
+  
+  .n-evento{
+    color: #fff;
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+  }
+  
+  .last-day{
+    background-color: black;
+  }
+  
+  .evento{
+    background-color: rgb(251, 203, 12);
+  }
+  
+  .today{
+    background-color: #fff;
+    color: black;
+  }
+  
+  .calendario-prev:hover{
+    color: rgb(34, 33, 42);
+  }
+  
+  .calendario-next:hover{
+    color: rgb(34, 33, 42);
+  }
+  
+  @media (max-width: 350px){
+
+    
+    .calendario-item{
+        line-height: normal;
+    }
+  
+    #dates{
+        grid-gap: 5px;
+    }
+   .semanas{
+    font-size: 10px;
+    margin-top: 15px;
+   } 
+  
+   .numero{
+    width: 80%;
+   }
+  
+   .calendario-days{
+    font-size: 10px;
+   }
+  
+   .n-evento{
+    font-size: 6px;
+   }
+
+   .info-sd{
+    width: 85%;
+    padding: 5px;
+    margin-top: 0px;
+    
+  }
+  }

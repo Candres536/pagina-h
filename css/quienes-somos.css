@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .encabezado {
+  position: relative;
+  z-index: 100000000000000000000000;
+  margin-bottom: 5px;
+  width: 100%;
+  background-color:#fbcb0c77;
+  padding: 6px;
+  float: right;
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  }
+  .titulo {
+  height: 40px;
+  float: right;
+  
+  }
+  .casa>img{
+  height: 50px;
+  margin-left: 10px;
+  z-index: 5;
+  border-radius: 50%;
+  }
+  .casa{
+  z-index: 5;
+  cursor: pointer;
+  }
+  
+  /* Submenú */
+  .submenu {
+  width: 100%;
+  flex-direction: row;
+  position: absolute;
+  flex-wrap: wrap;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  
+  }
+  
+  @media (max-width: 480px){
+    .submenu{
+      justify-content: center;
+    }
+  
+    .sub-a{
+      width: 100%;
+      margin-left: 0px;
+      text-align: center;
+      font-size: 12px;
+    }
+  
+    .titulo{
+      height: 25px;
+    }
+  }
+  
+  
+  .sub-a{
+    font-family: 'Relaway', sans-serif;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #333;
+  margin-left: 10px;
+  }
+  
+  .sub-a:hover{
+    background-color: #fde78e;
+  }
+  
+  /*----------------------fin del menu-----------*/
+  
+
+/*----------------------fin del menu-----------*/
+
+.cont-max{
+    width: 100%;
+    position: relative;
+    padding-top: 70px;
+    display: block;
+    
+}
+
+.sub1{
+    width: 50%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.sub2{
+    
+    height: 700px;
+    width: 50%;
+    max-width: 50%;
+    position: absolute;
+    right: 0px;
+    
+    
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    border: none;
+    border-color: transparent;
+    
+    
+}
+
+.caja1, .caja2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.titulo2{
+    padding: 5px;
+    background-color: #fbcb0c;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.texto{
+    padding-left: 20px;
+    font-size: 35px;
+    z-index: 3;
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    
+}
+
+.cont-max2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 688px;
+    width: 100%;
+    position: relative;
+    padding-bottom: 10px;
+    
+}
+
+.titulo3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 87px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #fbcb0c;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.sub-div{
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+
+.grid-container {
+    margin-top: 50px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas con el mismo tamaño */
+    grid-template-rows: repeat(5, 1fr); /* 5 filas con el mismo tamaño */
+    gap: 30px; /* Espacio entre las celdas */
+  }
+  
+  .grid-item {
+    padding: 20px 60px;
+    padding-left: 250px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    font-size: 33.9px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  .cheque{
+    width: 60px;
+  }
+
+  .descrip{
+    font-family: 'Arimo', sans-serif;
+    font-size: 23px;
+    align-items: center;
+    justify-content: normal;
+    text-align: left;
+    padding: 20px 0px;
+   
+}
+  
+
+.cont-max3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 800px;
+    width: 100%;
+    position: relative;
+    padding-bottom: 10px;
+
+}
+.titulo4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 87px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #fbcb0c;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.nota{
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 55px;
+}
+
+.texto2{
+    font-size: 33px;
+    font-family: 'Raleway', sans-serif;
+    width: 92%;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 120px;
+    font-family: 'Arimo', sans-serif;
+}
+
+.max-dere{
+    position: absolute;
+    bottom: 5px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dere{
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.derechos{
+    margin-top: 0;
+}
+
+.derechos>img {
+    width: 65px;
+    margin-bottom: 0;
+}
+
+.corner{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(0 23%, 0% 100%, 100% 100%);
+    background-color: #fbcb0c;
+}
+
+.casa > img:hover{
+    box-shadow: 5px 5px 17px #FFFFFF;
+    box-shadow: -5px -5px 17px #FFFFFF;
+    
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+  }
+  video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+  }
+    
+
+  .back-to-top {
+    cursor: pointer;
+    position: fixed;
+    right: 2.5rem;
+    bottom: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #fbcb0c;
+    padding: 7px;
+    border: none;
+    
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+    .flecha{
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 480px){
+        .titulo{
+            height: 25px;
+          }
+        .texto{
+            font-size: 20px;
+        }
+        .sub2{
+            visibility: hidden;
+        }
+
+        .sub1{
+            width: 100%;
+        }
+        .titulo2{
+            font-size: 35px;
+        }
+        .titulo3{
+            font-size: 35px;
+        }
+        .titulo4{
+            font-size: 35px;
+            margin-bottom: 150x;
+        }
+
+        .grid-container{
+            gap: 5px;
+            margin-top: 5px;
+        }
+
+        .grid-item{
+           
+            font-size: 15.3px;
+            padding: 20px;
+            padding-left: 40px;
+        }
+
+        .caja1, .caja2{
+            padding: 15px;
+        }
+
+        .descrip{
+            font-size: 15.3px;
+            padding-left: 0px;
+            
+        }
+
+        .nota{
+            font-size: 17.3px;
+            text-align: center;
+            margin-bottom: 15px; 
+            margin-top: 38px;
+            
+        }
+        .texto2{
+            font-size: 17.3px; 
+            padding-left: 1px ;
+            padding-right: 1px ;
+            
+    
+
+        }
+
+        .cheque{
+            width: 20px;
+        }
+
+    
+
+        .cont-max3{
+           padding: 5px;
+        }
+
+        .back-to-top{
+            width: 30px;
+            height: 30px;
+          }
+          .imagen:hover{
+            transform: scale(1.1);
+            transition: 0.1s;
+          }
+
+          
+        
+          .dere{
+            font-size: 7px;
+            margin-bottom: 20px;
+          }
+          .derechos>img {
+            width: 35px;
+            margin-bottom: 0;
+        }
+
+        .cont-max2{
+            top: 488px;
+        }
+
+        .cont-max3{
+            top: 540px;
+        }
+        
+    }
+
+    @media (min-width: 481px) and (max-width:1024px){
+        .titulo{
+            height: 25px;
+          }
+        .texto{
+            font-size: 20px;
+        }
+        .sub2{
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+        .sub1{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        .titulo2{
+            font-size: 35px;
+        }
+        .titulo3{
+            font-size: 35px;
+        }
+        .titulo4{
+            font-size: 35px;
+        }
+
+        .grid-item{
+            font-size: 17.3px;
+            padding: 20px;
+            padding-left: 100px;
+        }
+
+        .caja1, .caja2{
+            padding: 15px;
+        }
+
+        .descrip{
+            font-size: 17.3px;
+            padding: 20px;
+            
+        }
+
+        .nota{
+            font-size: 17.3px;
+            text-align: center;
+            margin-bottom: 15px; 
+            margin-top: 20px;
+            
+        }
+        .texto2{
+            font-size: 17.3px; 
+            padding-left: 1px ;
+            padding-right: 1px ;
+            
+    
+
+        }
+
+        .cheque{
+            width: 20px;
+        }
+
+        
+
+        .cont-max3{
+           padding: 5px;
+        }
+
+        .back-to-top{
+            width: 30px;
+            height: 30px;
+          }
+          .imagen:hover{
+            transform: scale(1.1);
+            transition: 0.1s;
+          }
+
+          
+        
+          .dere{
+            font-size: 7px;
+            margin-bottom: 20px;
+          }
+          .derechos>img {
+            width: 35px;
+            margin-bottom: 0;
+        }
+
+        .cont-max2{
+            top: 280px;
+        }
+
+        .cont-max3{
+            top: 300px;
+        }  
+    }

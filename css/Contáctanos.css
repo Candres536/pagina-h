@@ -1,0 +1,414 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow: hidden;
+}
+.encabezado {
+position: relative;
+z-index: 100000000000000000000000;
+margin-bottom: 5px;
+width: 100%;
+background-color:#fbcb0c77;
+padding: 6px;
+float: right;
+margin-bottom: 1px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.titulo {
+height: 40px;
+float: right;
+
+}
+.casa>img{
+height: 50px;
+margin-left: 10px;
+z-index: 5;
+border-radius: 50%;
+}
+.casa{
+z-index: 5;
+cursor: pointer;
+}
+
+/* Submenú */
+.submenu {
+width: 100%;
+flex-direction: row;
+position: absolute;
+flex-wrap: wrap;
+top: 100%;
+left: 0;
+display: none;
+background-color: #fff;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+@media (max-width: 480px){
+  .submenu{
+    justify-content: center;
+  }
+
+  .sub-a{
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .titulo{
+    height: 25px;
+  }
+}
+
+
+.sub-a{
+  font-family: 'Relaway', sans-serif;
+display: block;
+padding: 10px;
+text-decoration: none;
+font-size: 20px;
+color: #333;
+margin-left: 10px;
+}
+
+.sub-a:hover{
+  background-color: #fde78e;
+}
+
+/*----------------------fin del menu-----------*/
+
+  .max-lll{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    
+
+  }
+
+  .container{
+  width: 50%; 
+  display: flex;
+  padding-top: 10px ;
+  }
+
+  .c-2{
+    background-color: rgb(218, 218, 218);
+  }
+
+  .contac{
+    position: relative;
+    left: 20px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px;
+    font-size: 40px;
+    background-color: #fbcb0c;
+    text-align: center;
+    font-weight: 900;
+  }
+  
+
+
+  .max-max{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .max{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .max2{
+    background-color: rgb(218, 218, 218);
+    height: 504px;
+  }
+  .academy, .consultant{
+    font-size: 50px;
+    margin: 20px  0px;
+    font-family: 'Relaway', sans-serif;
+    font-weight: 900;
+
+  }
+  .titulo-l{
+    font-size: 47px;
+    font-family: 'Relaway', sans-serif;
+    font-weight: 900;
+    width: auto;
+    padding-right: 10px;
+  }
+
+  .contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 40px;
+   }
+
+   .contenedor2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 40px;
+   }
+
+ .logo-img{
+  width: 80px;
+  height: 80px ;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  
+ }
+
+ .gmail{
+  border: 5px solid black;
+ }
+
+ .logo{
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .tex-l{
+  width: 100%;
+  font-style: none;
+  text-align: center;
+  padding: 5px;
+  font-family: 'Relaway', sans-serif;
+  font-weight: 900;
+  color: black;
+ }
+
+ .link{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+   text-decoration: none;
+ }
+
+ .logo:hover .logo-img{
+  width: 85px;
+  height: 85px;
+ }
+
+
+
+ 
+
+   .max-dere{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dere{
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.derechos{
+    margin-top: 0;
+    margin-bottom: 20px;
+   
+
+
+}
+
+.derechos2>img {
+    width: 50px;
+    margin-bottom: 0;
+    
+}
+
+.corner{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(0 23%, 0% 100%, 100% 100%);
+    background-color: #fbcb0c;
+}
+
+
+@media (max-width: 480px){
+  body{
+    overflow: visible;
+  }
+  .c-1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .contac{
+    position: none ;
+    left: 0;
+    font-size: 35px;
+   
+  }
+  .c-2{
+    width: 0;
+    visibility: hidden;
+    position: none;
+  }
+
+  .max-max{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .academy, .consultant{
+      font-size: 32px;
+  }
+
+  .max{
+    width: 100%;
+  }
+
+  .max1{
+    padding-bottom: 35px;
+  }
+
+  .max2{
+    height: 350px;
+  }
+
+  .contenedor{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contenedor2{
+    margin-top: 20px;
+    row-gap: 1px;
+    column-gap: 1px;
+  }
+
+  .inscripcion{
+    top: 250px;
+  }
+
+  .back-to-top{
+    width: 30px;
+    height: 30px;
+  }
+  .imagen:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+  }
+
+ 
+
+  .dere{
+    font-size: 7px;
+    margin-bottom: 20px;
+  }
+  .derechos2>img {
+    width: 35px;
+    margin-bottom: 0;
+    
+}
+  .max-dere{
+    margin-top: 0px;
+    top:0px;
+    background-color: rgb(218, 218, 218);
+    bottom: 0px;
+    position: relative;
+  }
+
+  .logo-img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .gmail{
+    border: 2px solid black;
+  }
+}
+
+@media (min-width: 481px) and (max-width:1024px){
+  body{
+    overflow: visible;
+  }
+  .casa>img{
+    height: 100%;
+  }
+  .titulo{
+    height: 25px;
+  }
+.texto{
+    font-size: 20px;
+}
+
+.casa{
+  width: 25px;
+  height: 25px;
+}
+
+.contac{
+  font-size: 20px;
+}
+
+.academy, .consultant{
+  font-size: 20px;
+}
+
+.max2{
+    height: 287px;
+  }
+.contenedor{
+  column-gap: 10px;
+}
+
+.logo-img{
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.tex-l{
+
+  font-size: 15px;
+}
+
+ .dere{
+    font-size: 7px;
+    margin-bottom: 0px;
+  }
+
+    .derechos2>img {
+    width: 25px;
+    margin-bottom: 0;
+    
+}
+  
+}

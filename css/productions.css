@@ -1,0 +1,459 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.encabezado {
+position: relative;
+z-index: 100000000000000000000000;
+margin-bottom: 5px;
+width: 100%;
+background-color:#fbcb0c77;
+padding: 6px;
+float: right;
+margin-bottom: 1px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.titulo {
+height: 40px;
+float: right;
+
+}
+.casa>img{
+height: 50px;
+margin-left: 10px;
+z-index: 5;
+border-radius: 50%;
+}
+.casa{
+z-index: 5;
+cursor: pointer;
+}
+
+/* Submenú */
+.submenu {
+width: 100%;
+flex-direction: row;
+position: absolute;
+flex-wrap: wrap;
+top: 100%;
+left: 0;
+display: none;
+background-color: #fff;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+@media (max-width: 480px){
+  .submenu{
+    justify-content: center;
+  }
+
+  .sub-a{
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .titulo{
+    height: 25px;
+  }
+}
+
+
+.sub-a{
+  font-family: 'Relaway', sans-serif;
+display: block;
+padding: 10px;
+text-decoration: none;
+font-size: 20px;
+color: #333;
+margin-left: 10px;
+}
+.sub-a:hover{
+  background-color: #fde78e;
+}
+
+/*----------------------fin del menu-----------*/
+  
+  /*----------------------fin del menu-----------*/
+
+  .titulo2{
+    position: relative;
+    width: 100%;
+   
+  }
+
+  .texto2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    font-family: 'Relaway', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    overflow: hidden;
+    text-align: center;
+    z-index: 3;
+  }
+
+  .circulo{
+    width: 200px;
+    height: 200px;
+    background-color: #fbcb0c;
+    border-radius: 100%;
+    position: absolute;
+    
+    right: 380px;
+    top: 100px;
+  }
+
+  .rec-pri{
+    position: absolute;
+    width: 150px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 30px;
+    right: 290px;
+    top: 160px;
+    
+    background-color:rgba(8,24,48,255);
+  }
+
+  .rec{
+    margin-left: 22px;
+    margin-top: 10px;
+    width: 110px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 30px;
+    
+  }
+
+  .texto3{
+    line-height: 60px;
+    position: absolute;
+    left: 70px;
+    right: 0;
+    top: 360px ;
+    font-family: 'Relaway', sans-serif;
+    font-size: 37px;
+    width: 1260px;
+
+   
+    
+  }
+  span{
+    font-weight: bold;
+  }
+
+
+  .videos{
+    z-index: 30;
+  }
+
+  .part2{
+    width: 100%;
+    position: relative;
+    top:550px
+  }
+ 
+
+ .galeria-videos{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+
+ .fila1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+ }
+
+ .fila2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+ }
+ .cont-video{
+  cursor: pointer;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px;
+ }
+
+ .texto-video{
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+ }
+
+ .fila2 > .cont-video{
+  margin-top: 10px;
+ }
+
+ .videos{
+  width: 100%;
+  border-radius: 25px;
+  height: 300px;
+  object-fit: cover;
+ }
+
+ .cont-video:hover{
+  width: 350px;
+  box-shadow: #fbcb0c 20px;
+ }
+
+ .videos:hover{
+  height: 350px;
+ }
+
+ .back-to-top {
+  cursor: pointer;
+  position: fixed;
+  right: 2.5rem;
+  bottom: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #fbcb0c;
+  padding: 7px;
+  border: none;
+  
+}
+
+.hidden {
+  display: none;
+}
+
+  .flecha{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .max-dere{
+    top: 550px;
+    position: relative;
+    bottom: 30px;
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dere{
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.derechos{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.derechos2>img {
+    width: 65px;
+    margin-bottom: 0;
+}
+
+.corner{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(0 23%, 0% 100%, 100% 100%);
+    background-color: #fbcb0c;
+}
+
+
+@media (max-width: 480px){
+  .titulo{
+    height: 25px;
+  }
+  .circulo{
+    right: 50px;
+    top: 100px;
+    width: 80px;
+    height: 80px;
+  }
+  .texto3{
+    font-size: 17px;
+    width: 90%;
+    line-height: 25px;
+    left: 15px;
+    top: 210px;
+  }
+
+  .texto2{
+    font-size: 35px;
+  }
+
+  .cont-video{
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    margin-bottom: 30px;
+  }
+
+  .part2{
+    top: 370px;
+  }
+  .texto-video{
+    font-size: 15px;
+  }
+
+  .rec{
+    width: 40px;
+    height: 15px;
+  }
+
+  .rec-pri{
+    top: 120px;
+    right: 10px;
+    width: 80px;
+    height: 35px;
+  }
+
+  .derechos{
+    margin-bottom: 5px;
+  }
+
+  .videos:hover{
+    height:250px;
+  }
+
+  .cont-video:hover{
+    width: 250px;
+  }
+
+  .max-dere{
+    top: 370px;
+  }
+
+  .back-to-top{
+    width: 30px;
+    height: 30px;
+  }
+  .imagen:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+  }
+
+  
+
+  .dere{
+    font-size: 7px;
+    margin-bottom: 20px;
+  }
+  .derechos2>img {
+    width: 35px;
+    margin-bottom: 0;
+}
+
+}
+
+
+@media (min-width: 481px) and (max-width:1024px){
+  .titulo{
+    height: 25px;
+  }
+  .circulo{
+    right: 195px;
+    top: 100px;
+    width: 80px;
+    height: 80px;
+  }
+  .texto3{
+    font-size: 17px;
+    width: 90%;
+    line-height: 25px;
+    left: 15px;
+    top: 210px;
+  }
+
+  .texto2{
+    font-size: 35px;
+  }
+
+  .cont-video{
+    width: 180px;
+    height: 180px;
+    margin: 15px;
+    margin-bottom: 30px;
+  }
+
+  .part2{
+    top: 290px;
+  }
+  .texto-video{
+    font-size: 15px;
+  }
+
+  #cont-video4{
+    margin-top: 20px;
+  }
+
+  .rec{
+    width: 40px;
+    height: 15px;
+  }
+
+  .rec-pri{
+    top: 120px;
+    right: 150px;
+    width: 80px;
+    height: 35px;
+  }
+
+  .derechos{
+    margin-bottom: 5px;
+  }
+
+  .videos:hover{
+    height:190px;
+  }
+
+  .cont-video:hover{
+    width: 190px;
+  }
+
+  .max-dere{
+    top: 300px;
+  }
+
+  .back-to-top{
+    width: 30px;
+    height: 30px;
+  }
+  .imagen:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+  }
+
+  
+
+  .dere{
+    font-size: 7px;
+    margin-bottom: 20px;
+  }
+  .derechos2>img {
+    width: 35px;
+    margin-bottom: 0;
+}
+}

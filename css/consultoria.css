@@ -1,0 +1,493 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.encabezado {
+position: relative;
+z-index: 100000000000000000000000;
+margin-bottom: 5px;
+width: 100%;
+background-color:#fbcb0c77;
+padding: 6px;
+float: right;
+margin-bottom: 1px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.titulo {
+height: 40px;
+float: right;
+
+}
+.casa>img{
+height: 50px;
+margin-left: 10px;
+z-index: 5;
+border-radius: 50%;
+}
+.casa{
+z-index: 5;
+cursor: pointer;
+}
+
+/* Submenú */
+.submenu {
+width: 100%;
+flex-direction: row;
+position: absolute;
+flex-wrap: wrap;
+top: 100%;
+left: 0;
+display: none;
+background-color: #fff;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+@media (max-width: 480px){
+  .submenu{
+    justify-content: center;
+  }
+
+  .sub-a{
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .titulo{
+    height: 25px;
+  }
+}
+
+
+.sub-a{
+  font-family: 'Relaway', sans-serif;
+display: block;
+padding: 10px;
+text-decoration: none;
+font-size: 20px;
+color: #333;
+margin-left: 10px;
+}
+
+.sub-a:hover{
+  background-color: #fde78e;
+}
+
+/*----------------------fin del menu-----------*/
+
+
+/*----------------------fin del menu-----------*/
+
+.maxDiv{
+
+  width: 100%;
+  position: relative;
+  top: 80px;
+}
+
+.left{
+  position: absolute;
+  left: 0;
+  width: 50%;
+  padding-top: 50px;
+  padding-left: 30px;
+
+}
+
+.right{
+  position: absolute;
+  right: 0;
+  width: 50%;
+  overflow: hidden;
+ 
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.titulo2{
+  margin-top: 20px;
+  font-size: 75px;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.texto2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+}
+
+span{
+  font-weight: bold;
+}
+  .maxDiv2{
+    top: 700px;
+    position: relative;
+    width: 100%;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    
+  }
+
+  
+  
+  .final{
+    position: relative;
+    top: 800px;
+    width: 100%;
+    height: 30px;
+  }
+  .max-dere{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 28px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.dere{
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.derechos{
+    margin-top: 0;
+}
+
+.derechos>img {
+    width: 65px;
+    margin-bottom: 0;
+}
+
+.corner{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(0 23%, 0% 100%, 100% 100%);
+    background-color: #fbcb0c;
+}
+
+
+
+.back-to-top {
+  cursor: pointer;
+  position: fixed;
+  right: 2.5rem;
+  bottom: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #fbcb0c;
+  padding: 7px;
+  border: none;
+  
+}
+
+.hidden {
+  display: none;
+}
+
+  .flecha{
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  .fila{
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  }
+
+
+  .imagen{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    
+    
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 100%;
+    height: 100%;
+    transition: ease;
+    overflow: hidden;
+    visibility: hidden;
+    border-radius: 20px;
+    padding: 2px;
+    
+}
+
+
+.imagen:hover .overlay{
+    visibility: visible;
+    cursor: pointer;
+
+
+}
+
+
+h1{
+    
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.p{
+  text-align: center;
+  margin-top: 1px;
+  color: white;
+}
+
+
+.imagen:hover{
+    transform: scale(1.3);
+    transition: 0.1s;
+  }
+
+
+  .columna{
+    margin: 30px;
+  }
+
+
+  .titulo-caja-9{
+    font-size: 20px;
+  }
+
+  .p9{
+    margin-top: 3px;
+  }
+
+  .titulo-caja-6{
+    font-size: 25px;
+  }
+
+  .p6{
+    margin-top: 15px;
+  }
+
+  .titulo-caja-5{
+    font-size: 25px;
+  }
+
+  .titulo-caja-4{
+    font-size: 25px;
+  }
+
+  .p4{
+    margin-top: 20px;
+  }
+
+  .p3{
+    font-size: 15px;
+  }
+
+  .p2{
+    margin-top: 15px;
+  }
+
+  @media (max-width: 480px){
+    .titulo{
+      height: 25px;
+    }
+
+    .texto25{
+      margin-top: 20px;
+    }
+    .fila{
+      flex-wrap: wrap;
+    }
+
+    .columna{
+      margin: 10px;
+    }
+    .imagen{
+      position: relative;
+      width: 250px;
+      height: 190px;
+      border-radius: 20px;
+      
+      
+  }
+
+  .maxDiv{
+    top: 30px;
+  }
+
+  .left{
+    width: 100%;
+  }
+  .right{
+    visibility: hidden;
+  }
+
+  .columna{
+    margin: 32px;
+  }
+  .titulo2{
+    font-size: 40px;
+    margin-top: 10px;
+  }
+
+  .texto2{
+    font-size: 15px;
+    margin-right: 5px;
+  }
+
+  .maxDiv2{
+    top: 250px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .final{
+    top: 330px;
+  }
+
+  .dere{
+    font-size: 7px;
+  }
+  .derechos>img {
+    width: 35px;
+    margin-bottom: 0;
+}
+
+  .overlay > h1{
+    font-size: 17px;
+  }
+
+  .overlay > .p{
+    font-size: 12px;
+  }
+
+  .back-to-top{
+    width: 30px;
+    height: 30px;
+  }
+  .imagen:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+  }
+
+  }
+
+  @media (min-width: 481px) and (max-width:1024px){
+    .titulo{
+      height: 25px;
+    }
+
+    .texto25{
+      margin-top: 20px;
+    }
+    .fila{
+      flex-wrap: wrap;
+    }
+
+    .columna{
+      margin-right: 40px;
+    }
+    .imagen{
+      position: relative;
+      width: 250px;
+      height: 190px;
+      border-radius: 20px;
+      
+      
+  }
+
+  .maxDiv{
+    top: 30px;
+  }
+
+  .left{
+    width: 100%;
+  }
+  .right{
+    visibility: hidden;
+  }
+
+  .columna{
+    margin: 32px;
+  }
+  .titulo2{
+    font-size: 40px;
+    margin-top: 10px;
+  }
+
+  .texto2{
+    font-size: 15px;
+    margin-right: 5px;
+  }
+
+  .maxDiv2{
+    top: 250px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .final{
+    top: 330px;
+  }
+
+  .dere{
+    font-size: 7px;
+  }
+  .derechos>img {
+    width: 35px;
+    margin-bottom: 0;
+}
+
+  .overlay > h1{
+    font-size: 17px;
+  }
+
+  .overlay > .p{
+    font-size: 12px;
+  }
+
+  .back-to-top{
+    width: 30px;
+    height: 30px;
+  }
+  .imagen:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+  }
+  }
